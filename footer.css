@@ -1,0 +1,120 @@
+footer {
+    background-color: #033747;
+    color: #fff;
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-contact h1,
+.footer-links h1,
+.footer-social h1 {
+    color: #FFA500;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer-contact p,
+.footer-links ul li a {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-links a:hover {
+    color: #FFA500;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.footer-social .social-icons a:hover {
+    transform: scale(1.2);
+    color: #FFA500;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 1rem auto 0;
+    padding: 1rem;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-back-to-top {
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-back-to-top i {
+    color: #fff; /* Explicitly set arrow to white */
+}
+
+.footer-back-to-top:hover {
+    background-color: #e59400;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-back-to-top {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+

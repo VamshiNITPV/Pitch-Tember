@@ -1,0 +1,223 @@
+.container1 {
+    padding-top: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.container1 h1,.container2 h1,.container3 h1{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: orange;
+    text-align: center;
+}
+
+.container1 p,.container2 p{
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.container3 p
+{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+/* Grid Container */
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+
+/* Grid Item */
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+}
+
+ .grid-item:hover {
+    transform: scale(1.1);
+}
+
+/* Image inside grid */
+    .grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Name under the image */
+.grid-item p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/*container2*/
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    margin: 50px;
+    margin-bottom: 10px;
+}
+.grid-container2 {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); Adjusted for more columns */
+    grid-template-columns: repeat(6, 1fr); /* Ensures 6 columns */
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Grid Item in Container2 */
+.grid-item2 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+.grid-item2:hover{
+    transform: scale(1.05);
+}
+
+/* Image fixed to grid size */
+.grid-item2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image completely fills the grid item */
+}
+
+/* Name below image in Container2 */
+.grid-item2 p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+.grid-item2 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+
+}
+.grid-item2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image completely fills the grid item */
+}
+.grid-item2 p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+   
+    .container1,.container2 ,.container3{
+        padding: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .container1 h1,.container2 h1 ,.container3 h1{
+        font-size: 2rem;
+    }
+
+    .container1 p,.container2 p,.container3 p {
+        font-size: 1rem;
+    }
+
+    .grid-container1 .grid-item p , .grid-item p, .grid-item2 p{
+        font-size: 1rem;
+    }
+    .container1,.container2,.container3{
+        padding: 10px;
+    }
+}
+
+/*container 3*/
+.container3{
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; 
+    align-items: center; 
+    justify-items: center; 
+    margin-top: 50px;
+    max-width: 700px;
+    /* max-width: 900; */
+}
+.grid-item3 {
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    width: 100%; 
+    max-width: 250px; 
+}
+.grid-item3:hover {
+    transform: scale(1.05); 
+}
+.grid-item3 img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; /
+}
+.grid-item3 p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+/* container3 media query */
+@media (max-width: 600px) {
+    .grid-container3 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .grid-container3 {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+/*container2 media query*/
+@media (max-width: 1200px) {
+    .grid-container2 {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on medium screens */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .grid-container2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-container2 {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+        padding: 10px;
+    }
+}

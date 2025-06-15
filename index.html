@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Tember</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="stylesh5.css">
+    <link rel="stylesheet" href="style_about.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="special_guest.css">
+    <link rel="stylesheet" href="sponsors_partners.css">
+    <link rel="stylesheet" href="styles_ourteam.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="nitplogo.png" alt="header_logo">
+                <!-- 1 -->
+                <a href="index.html">Pitch Tember</a>
+            </div>
+            <div class="links">
+                <ul>
+                    <!-- 2 -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#guests">Guests</a></li>
+                    <!-- <li><a href="#hitem1">About Events</a></li> -->
+                    <!-- <li><a href="#hitem1">Ticket</a></li> -->
+                    <li><a href="#sponsors_partners">Sponsors and Partners</a></li>
+                    <li><a href="#team-section">Our Team</a></li>
+                    <!-- <li><a href="#hitem1">Patron</a></li> -->
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul>
+            </div>
+            <a href="https://pitchtember.devfolio.co/overview" target="_blank" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <ul>
+                <!-- 3 -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#guests">Guests</a></li>
+                <!-- <li><a href="#hitem1">About Events</a></li> -->
+                <!-- <li><a href="#hitem1">Ticket</a></li> -->
+                <li><a href="#sponsors_partners">Sponsors and Partners</a></li>
+                <li><a href="#team-section">Our Team</a></li>
+                <!-- <li><a href="#hitem1">Patron</a></li> -->
+                <li><a href="#footer">Contact Us</a></li>
+                <li><a href="https://pitchtember.devfolio.co/overview" target="_blank" class="action_btn">Get Started</a></li>
+            </ul>
+        </div>
+        <div class="hero-section">
+            <h1 class="title">PITCH ₹ TEMBER</h1>
+            <p class="date">23rd Nov - 18th Dec '24</p>
+            <div class="details">
+                <p>Pre incubation offers and </p>
+                <p>swags worth Rs 25 Lakhs</p>
+            </div>
+            <h2 class="subtitle">Udyamita-Unnati-Uthaan-Unnayan-Upsanskaran</h2>
+            <p class="prize">Prize Pool of ₹1 Lakh</p>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+            toggleBtnIcon.classList = isOpen
+                ? 'fa fa-times'
+                : 'fa fa-bars';
+        }
+        const dropdownLinks = document.querySelectorAll('.dropdown_menu a');
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            dropDownMenu.classList.remove('open');
+            toggleBtnIcon.classList = 'fa fa-bars';
+        });
+    });
+    </script>
+    <!-- HEADER END -->
+
+    <!-- ABOUT-SECTION START -->
+     <div class="about" id="about">
+        <h1>About Event</h1>
+        <div class="about_container">
+            <div class="about1">
+                <h2>What is PitchTember ?</h2>
+                <p>The <b>National Institute of Technology Patna</b> is hosting <b>Pitchtember</b> Fest, an event focused on empowering entrepreneurs. The event follows a journey from awakening to refinement, offering a comprehensive entrepreneurial experience.<br>
+                    <b>Udhyamita:</b>This day is a dynamic blend of entrepreneurship and skill development. Participants will learn to fuse their newly acquired skills with innovative ideas, laying the foundation for their entrepreneurial journey.<br>
+                    <b>Unnati:</b> It is all about pitching ideas and attracting investment. It's a spotlight on innovation, where participants present their entrepreneurial dreams to potential investors and mentors.<br>
+                    <b>Uthaan:</b>Day one sets the stage for an inspiring journey. Participants will awaken their inner entrepreneurs, as they delve into the world of creativity, innovation, and idea generation<br>
+                    <b>Unnayan:</b>As we progress, Day focuses on skill development and growth. It's all about nurturing and enhancing the abilities that budding entrepreneurs need to succeed.<br>
+                    <b>Upsanskaran:</b>The grand finale of Pitchtember is a celebration of innovation and entrepreneurial excellence. Participants showcase how far they've come, as the event culminates with awards and recognition.<br>
+
+                </p>
+            </div>
+            <div class="about2">
+                <a href="registration process.pdf" target="_blank">Registration Process</a>
+                <a href="https://pitchtember.devfolio.co/projects" target="_blank" >Go to Projects</a>
+            </div>
+        </div>
+     </div>
+     <!-- ABOUT-SECTION END -->
+
+     <!-- TIME-LINE SECTION START -->
+     <div class="schedule" id="schedule" >
+        <h1>Event Schedules</h1>
+        <div class="timeline">
+            <div class="container left-container">
+                <img src="nitplogo.png">
+                <div class="text-box">
+                    <h2>Udhyamita</h2>
+                    <small>timings1</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+                        necessitatibus repellendus? Delectus porro laborum dolores maiores explicabo iste minima? Dolor?
+                    </p>
+                    
+                </div>
+                <span class="left-container-arrow"></span>
+            </div>
+            <div class="container right-container">
+                <img src="nitplogo.png">
+                <div class="text-box">
+                    <h2>Unnati</h2>
+                    <small>timings2</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+                         necessitatibus repellendus? Delectus porro laborum dolores maiores explicabo iste minima? Dolor?
+                    </p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container left-container">
+                <img src="nitplogo.png">
+                <div class="text-box">
+                    <h2>Uthaan</h2>
+                    <small>timings3</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+                        necessitatibus repellendus? Delectus porro laborum dolores maiores explicabo iste minima? Dolor?
+                    </p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container right-container">
+                <img src="nitplogo.png">
+                <div class="text-box">
+                    <h2>Unnayan</h2>
+                    <small>timings4</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+                        necessitatibus repellendus? Delectus porro laborum dolores maiores explicabo iste minima? Dolor?
+                    </p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container left-container">
+                <img src="nitplogo.png">
+                <div class="text-box">
+                    <h2>Upsanskaran</h2>
+                    <small>timings5</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+                        necessitatibus repellendus? Delectus porro laborum dolores maiores explicabo iste minima? Dolor?
+                    </p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- TIMELINE SECTION END -->
+
+    <!-- GUESTS SECTION START -->
+    <div class="guests" id="guests">
+        <h1 style="color: orange;">Our Special Guests</h1>
+        <div class="guest-section">
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 1">
+                <h3 class="guest-name">GUEST NAME 1</h3>
+                <p class="guest-position">Position 1</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 2">
+                <h3 class="guest-name">GUEST NAME 2</h3>
+                <p class="guest-position">Position 2</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 3">
+                <h3 class="guest-name">GUEST NAME 3</h3>
+                <p class="guest-position">Position 3</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 4">
+                <h3 class="guest-name">GUEST NAME 4</h3>
+                <p class="guest-position">Position 4</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 5">
+                <h3 class="guest-name">GUEST NAME 5</h3>
+                <p class="guest-position">Position 5</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 6">
+                <h3 class="guest-name">GUEST NAME 6</h3>
+                <p class="guest-position">Position 6</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 7">
+                <h3 class="guest-name">GUEST NAME 7</h3>
+                <p class="guest-position">Position 7</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 8">
+                <h3 class="guest-name">GUEST NAME 8</h3>
+                <p class="guest-position">Position 8</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 9">
+                <h3 class="guest-name">GUEST NAME 9</h3>
+                <p class="guest-position">Position 9</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 10">
+                <h3 class="guest-name">GUEST NAME 10</h3>
+                <p class="guest-position">Position 10</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 11">
+                <h3 class="guest-name">GUEST NAME 11</h3>
+                <p class="guest-position">Position 11</p>
+            </div>
+            <div class="guest">
+                <img src="nitpdirector.jpg" alt="Guest 12">
+                <h3 class="guest-name">GUEST NAME 12</h3>
+                <p class="guest-position">Position 12</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SPONSORS AND PARTNERS START -->
+    <div class="sponsors_partners" id="sponsors_partners">
+        <div class="container1">
+            <h1>Registration Partners</h1>
+            <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet lorem at neque tincidunt.</p>
+    
+            <div class="grid-container1">
+                <div class="grid-item">
+                    <img src="devfolio.png" alt="Person 1">
+                    <p>Devfolio</p>
+                </div>
+                <div class="grid-item">
+                    <img src="devfolio.png" alt="Person 2">
+                    <p>Devfolio</p>
+                </div>
+                <div class="grid-item">
+                    <img src="devfolio.png" alt="Person 3">
+                    <p>Devfolio</p>
+                </div>
+                <!-- <div class="grid-item">
+                    <img src="https://via.placeholder.com/150" alt="Person 4">
+                    <p>Person 4</p>
+                </div> -->
+            </div>
+        </div>
+    
+        <div class="container2">
+            <h1>Workshop Partners</h1>
+            <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet lorem at neque tincidunt. Integer egestas lacus a odio dignissim tincidunt.</p>
+    
+            <div class="grid-container2">
+                <div class="grid-item2">
+                    <img src="robotics.png" alt="Person 1">
+                    <p>Robotics Club NITP</p>
+                </div>
+                <div class="grid-item2">
+                    <img src="robotics.png" alt="Person 2">
+                    <p>2 Club NITP</p>
+                </div>
+                <div class="grid-item2">
+                    <img src="robotics.png" alt="Person 3">
+                    <p>3 Club NITP</p>
+                </div>
+                <div class="grid-item2">
+                    <img src="robotics.png" alt="Person 4">
+                    <p>4 Club NITP</p>
+                </div>
+                <div class="grid-item2">
+                    <img src="robotics.png" alt="Person 5">
+                    <p>5 Club NITP</p>
+                </div>
+                <div class="grid-item2">
+                    <img src="robotics.png" alt="Person 6">
+                    <p>6 Club NITP </p>
+                </div>
+                <div class="grid-item2">
+                    <img src="robotics.png" alt="Person 7">
+                    <p>7 Club NITP</p>
+                </div>
+                <div class="grid-item2">
+                    <img src="robotics.png" alt="Person 8">
+                    <p>8 Club NITP</p>
+                </div>
+                <div class="grid-item2">
+                    <img src="robotics.png" alt="Person 9">
+                    <p>9 Club NITP</p>
+                </div>
+                <div class="grid-item2">
+                    <img src="robotics.png" alt="Person 10">
+                    <p>10 Club NITP</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container3">
+            <h1>Registration Partners</h1>
+            <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet lorem at neque tincidunt.</p>
+    
+            <div class="grid-container3">
+                <div class="grid-item3">
+                    <img src="thinkindialogo.jpg" alt="Person 1">
+                    <p><b>OUR PARTNER</b></p>
+                    <P>Think India</P>
+                </div>
+                <div class="grid-item3">
+                    <img src="wolfram.jpeg" alt="Person 2">
+                    <p><b>MEDIA PARTNER</b></p>
+                    <p>Wolfram</p>
+                </div>
+                <!-- <div class="grid-item3">
+                    <img src="devfolio.png" alt="Person 3">
+                    <p>Devfolio</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- SPONSORS AND PARTNERS END -->
+
+    <!-- OUR TEAM START -->
+    <section class="team-section" id="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="pravind.jpg" alt="Team Member 1">
+                </div>
+                <div class="card-content">
+                    <h3>Pravind</h3>
+                    <p>ROLE</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="mandeep.jpg" alt="Team Member 2">
+                </div>
+                <div class="card-content">
+                    <h3>Mandeep</h3>
+                    <p>ROLE</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="team3.jpg" alt="Team Member 3">
+                </div>
+                <div class="card-content">
+                    <h3>Team Member 3</h3>
+                    <p>ROLE</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="team4.jpg" alt="Team Member 4">
+                </div>
+                <div class="card-content">
+                    <h3>Team Member 4</h3>
+                    <p>ROLE</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 5 -->
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="team5.jpg" alt="Team Member 5">
+                </div>
+                <div class="card-content">
+                    <h3>Team Member 5</h3>
+                    <p>ROLE</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 6 -->
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="team6.jpg" alt="Team Member 6">
+                </div>
+                <div class="card-content">
+                    <h3>Team Member 6</h3>
+                    <p>ROLE</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 7 -->
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="team7.jpg" alt="Team Member 7">
+                </div>
+                <div class="card-content">
+                    <h3>Team Member 7</h3>
+                    <p>ROLE</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 8 -->
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="team8.jpg" alt="Team Member 8">
+                </div>
+                <div class="card-content">
+                    <h3>Team Member 8</h3>
+                    <p>ROLE</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.team-card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+            card.querySelectorAll('.social-links a').forEach(icon => {
+                icon.style.transform = 'scale(1.2)';
+                icon.style.transition = 'transform 0.2s ease';
+        });
+    });
+
+    card.addEventListener('mouseout', () => {
+        card.querySelectorAll('.social-links a').forEach(icon => {
+            icon.style.transform = 'scale(1)';
+        });
+    });
+    });
+
+    </script>
+    <!-- OUR TEAM END -->
+
+    <!-- footer start -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h1>Contact Us</h1>
+                <p>Email: <a href="mailto:info@pitchtember.com">info@pitchtember.com</a></p>
+                <p>Phone: +91 123-456-7890</p>
+                <p>Address: National Institute of Technology Patna, Ashok Rajpath, Patna, Bihar 800005, India</p>
+            </div>
+            <div class="footer-links">
+                <h1>Links</h1>
+                <ul>
+                    <li><a href="https://www.nitp.ac.in/" target="_blank" rel="noopener noreferrer">NIT Patna Website</a></li>
+                    <li><a href="https://www.nitp.ac.in/incubation" target="_blank" rel="noopener noreferrer">NITP Incubation Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h1>Follow Us</h1>
+                <div class="social-icons">
+                    <a href="https://twitter.com/PitchTember" target="_blank" rel="noopener noreferrer" aria-label="Follow Pitch Tember on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/pitchtember" target="_blank" rel="noopener noreferrer" aria-label="Follow Pitch Tember on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/pitchtember" target="_blank" rel="noopener noreferrer" aria-label="Follow Pitch Tember on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/PitchTember" target="_blank" rel="noopener noreferrer" aria-label="Follow Pitch Tember on Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Pitch Tember, NIT Patna. All rights reserved.</p>
+            <p>Developed by <b style="color: orange
+                ;">Banoth Vamshi</b></p>
+            <a href="index.html" class="action_btn footer-back-to-top" aria-label="Back to Home Page">
+                <i class="fa fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Footer: Smooth scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Navigation: Toggle dropdown menu and close on link click
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+        
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+            toggleBtnIcon.classList = isOpen ? 'fa fa-times' : 'fa fa-bars';
+        };
+        
+        const dropdownLinks = document.querySelectorAll('.dropdown_menu a');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                dropDownMenu.classList.remove('open');
+                toggleBtnIcon.classList = 'fa fa-bars';
+            });
+        });
+        
+        // Team section: Social link hover effect (retained from original code)
+        document.querySelectorAll('.team-card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.querySelectorAll('.social-links a').forEach(icon => {
+                    icon.style.transform = 'scale(1.2)';
+                    icon.style.transition = 'transform 0.2s ease';
+                });
+            });
+        
+            card.addEventListener('mouseout', () => {
+                card.querySelectorAll('.social-links a').forEach(icon => {
+                    icon.style.transform = 'scale(1)';
+                });
+            });
+        });
+        </script>
+    <!-- footer end -->
+</body>
+</html>

@@ -1,0 +1,68 @@
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.about {
+    width: 100%; /* Adjust this value as needed */
+    max-width: 1000px;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    text-align: center;
+    margin: 100px auto; /* Centers the about section horizontally and adds space below the header */
+    padding-top: 50px;   
+    background: linear-gradient(135deg, #092533, #0f4d73);
+ 
+}
+.about h1 {
+    color: rgb(214, 140, 2);
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+.about1{
+    text-align: left;
+    line-height: 1.5;
+    color: rgb(184, 184, 184);
+}
+.about_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about1 {
+    margin-bottom: 20px;
+}
+.about p{
+    font-size: 1.2rem;
+}
+
+.about2 a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(243, 171, 38);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about2 a:hover {
+    background-color: darkorange;
+}
+html{
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+/* RESPONSIVE */
+@media(max-width:600px){
+    .about{
+        padding: 20px;
+        width: 95%;
+    }
+    .about p{
+        font-size: 1rem;
+    }
+}
